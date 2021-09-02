@@ -3,13 +3,40 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>LST</title>
+    <title>LMS</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='config.js'></script>
-    <script src='main.js'></script>
+    <link rel='stylesheet' type='text/css' media='screen' href='/public/css/main.css'>
 </head>
 <body>
+    <div class="wrapper">
+        <main class="page login">
+            <div class="logo max"></div>
+            <div class="title">
+                <p class="head">Welcome to the Learning Management System</p>
+                <p>Please log in to continue</p>
+            </div>
+
+            <div class="input-group">
+                <input id="login" placeholder="Username"/>
+            </div>
+            <div class="input-group">
+                <input id="password" type="password" placeholder="Password"/>
+            </div>
+            <div class="input-group">
+                <input id="remember" type="checkbox" name="remember">
+                <label for="remember">Remember me</label>
+            </div>
+            
+            <div id="error" class="error" hidden></div>
+            <div class="input-group">
+                <a class="btn login" href="#" id="submitLogin">Log In<i class="arrow-right"></i></a>
+            </div>
+            <div class="input-group">
+                <a class="btn login" href="#" id="submitReg">Reg<i class="arrow-right"></i></a>
+            </div>
+        </div>
+    </main>
     
+    <script src='/public/js/main.js'></script>
 </body>
 </html>

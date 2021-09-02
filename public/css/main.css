@@ -1,0 +1,161 @@
+
+body { 
+  background-color: #f6f6f6;
+  font-family: sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.page.login {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 500px;
+}
+
+.page.students {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 1000px;
+}
+
+.logo.max {
+  background: url("/public/assets/Logo.svg");
+  background-repeat: no-repeat;
+  height: 100px;
+}
+
+.title > .head {
+  font-weight: bold;
+  font-size: larger;
+}
+
+.input-group {
+  padding: 10px;
+}
+input {
+  border-radius: 25px;
+  border: 1px solid grey;
+  padding: 20px; 
+  width: calc(100% - 70px);
+  height: 15px;
+}
+
+input[id="login"] {
+  background: url(/public/assets/user.svg) no-repeat;
+  padding-left: 45px;
+}
+
+input[id="password"] {
+  background: url(/public/assets/password.svg) no-repeat;
+  padding-left: 45px;
+}
+
+
+input[type="checkbox"] {
+  width: unset;
+}
+
+input:focus{
+  outline: none;
+}
+
+.btn {
+  display:block;
+  border-radius: 25px;
+  padding: 15px; 
+  border: 0px;
+  background-color: #ec8d3c;
+}
+.btn > span,a {
+  color: white;
+  text-decoration: unset;
+}
+
+i.arrow-right {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  padding: 6px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  float: right; 
+}
+
+a:hover {
+  text-decoration: unset;
+}
+
+.hidden {
+  display: none;
+}
+
+.info, .success, .warning, .error, .validation {
+  border: 1px solid;
+  margin: 10px 0px;
+  padding: 15px 10px 15px 50px;
+  background-repeat: no-repeat;
+  background-position: 10px center;
+}
+
+.info {
+  color: #00529B;
+  background-color: #BDE5F8;
+}
+.success {
+  color: #4F8A10;
+  background-color: #DFF2BF;
+}
+.warning {
+  color: #9F6000;
+  background-color: #FEEFB3;
+}
+.error{
+  color: #D8000C;
+  background-color: #FFBABA;
+}
+.validation{
+  color: #D63301;
+  background-color: #FFCCBA;
+}
+
+#pagination { 
+  text-align: center;
+  padding: 10px 0;
+  font-size: 0;
+  margin: 10px 0;
+}
+
+.pagination_i {
+  font-size: 14px;
+  text-decoration: none;
+  
+  display: inline-block;
+  text-transform: uppercase;
+  margin: 0 3px 6px;
+  height: 38px;
+  min-width: 38px;
+  border-radius: 38px;
+  border: 2px solid #fff;
+  line-height: 38px;
+  padding: 0;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: .03em;
+}
+
+.pagination_i:hover,.pagination_i:active {
+  background-color: #000;
+  color: #fff;
+}
+
+#paginate {
+  background: #333;
+}
